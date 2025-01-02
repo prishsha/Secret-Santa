@@ -9,7 +9,7 @@ const app = express(); // Initializes express app used to define routes and midd
 
 // Configure CORS with specific origins and settings
 const corsOptions = {
-  origin: process.env.CLIENT_URL || 'http://localhost:3000', // Allow requests from your frontend's URL
+  origin: process.env.CLIENT_URL || '*', // Allow requests from your frontend's URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed HTTP methods
   credentials: true, // Allow cookies and credentials
 };
